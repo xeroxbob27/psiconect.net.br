@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'quasimoda-light';
-    src: url('../fonts/Quasimoda Light.otf') format('opentype');
+    src: url('../fonts/Quasimoda\ Light.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'quasimoda-semibold';
-    src: url('../fonts/Quasimoda SemiBold.otf') format('opentype');
+    src: url('../fonts/Quasimoda\ SemiBold.otf') format('opentype');
 }
 
 *{

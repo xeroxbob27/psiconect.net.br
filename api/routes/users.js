@@ -4,7 +4,7 @@ import {
     addRelato,
     getRelatos,
     getTranstornos
-} from "../controllers/usercotrollers.js"
+} from "../controllers/usercontrollers.js"
 
 const router = express.Router()
 

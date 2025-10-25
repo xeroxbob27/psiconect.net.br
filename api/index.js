@@ -20,8 +20,40 @@ app.get("/health", (req, res) => {
     res.json({message: "API Psiconect rodando! 🚀🚀", status: "online"})
 })
 
+app.get("/index.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'index.html'))
+})
+
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'page', 'index.html'))
+})
+
+app.get("/cadastrosucesso.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'cadastrosucesso.html'))
+})
+
+app.get("/canais.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'canais.html'))
+})
+
+app.get("/resultadobusca.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'resultadobusca.html'))
+})
+
+app.get("/sobre.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'sobre.html'))
+})
+
+app.get("/termodeuso.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'termodeuso.html'))
+})
+
+app.get("/transtornos.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'transtornos.html'))
+})
+
+app.get("/cadastro.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page', 'cadastro.html'))
 })
 
 
@@ -29,6 +61,8 @@ app.use((req, res, next) => {
   console.log(`📄 ${req.method} ${req.url}`)
   next()
 })
+
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`)

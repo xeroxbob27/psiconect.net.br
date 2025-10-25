@@ -1,4 +1,4 @@
-import API_CONFIG from "./config";
+import API_CONFIG from "./config.js";
 
   async function carregarRelatos() {
     const container = document.querySelector(".row.align-items-start");
